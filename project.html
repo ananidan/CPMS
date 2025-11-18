@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ongoing Projects · CPMS</title>
+  <link rel="stylesheet" href="project.css">
+ 
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav>
+    <div class="logo">🏗️ CPMS</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="project.html" style="color:#0969da; font-weight:600;">Ongoing Projects</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ongoing Projects</h1>
+      <p>Tracking active sites to ensure timely and efficient project delivery.</p>
+    </div>
+  </section>
+
+  <!-- ======== SUMMARY SECTION ======== -->
+  <section class="summary">
+    <div class="summary-card">
+      <h2>12</h2>
+      <p>Active Projects</p>
+    </div>
+    <div class="summary-card">
+      <h2>8</h2>
+      <p>Completed Projects</p>
+    </div>
+   
+    <div class="summary-card">
+      <h2>435</h2>
+      <p>Total Workforce</p>
+    </div>
+    
+  </section>
+
+  <!-- ======== FILTER SECTION ======== -->
+  <section class="filters">
+    <input type="text" placeholder="Search project name...">
+    <select>
+      <option>All Locations</option>
+      <option>Addis Ababa</option>
+      <option>Adama</option>
+      <option>Bahir Dar</option>
+    </select>
+    <select>
+      <option>All Status</option>
+      <option>In Progress</option>
+      <option>Delayed</option>
+      <option>On Schedule</option>
+    </select>
+  </section>
+
+<!--   ==== ONGOING PROJECTS ===== --> 
+  <section class="projects">
+    <h2>Ongoing Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="ongoing1.jpg" alt="Riverside Apartments">
+        <div class="project-card-content">
+          <h3>Abaymado Apartments</h3>
+          <p><strong>Location:</strong> Ayertena, BahirDar</p>
+          <p><strong>Duration:</strong> Jan 2025 – Dec 2025</p>
+          <div class="progress">
+            <span>Progress: 70%</span>
+            <div class="bar"><div style="width:70%; background:#2da44e;"></div></div>
+          </div>
+          <p><strong>Engineer:</strong> Eng. Bekele M.</p>
+          <span class="status ongoing">Ongoing</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="ongoing2.jpg" alt="Unity Bridge">
+        <div class="project-card-content">
+          <h3>Unity Bridge</h3>
+          <p><strong>Location:</strong> Jimma</p>
+          <p><strong>Duration:</strong> Dec 2024 – Aug 2025</p>
+          <div class="progress">
+            <span>Progress: 82%</span>
+            <div class="bar"><div style="width:82%; background:#2da44e;"></div></div>
+          </div>
+          <p><strong>Engineer:</strong> Eng. Samuel G.</p>
+          <span class="status ongoing">Ongoing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- === Completed  Projects === -->
+  <section class="projects">
+    <h2>Completed Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="completed1.jpg" alt="Green Tower">
+        <div class="project-card-content">
+          <h3>Ovid  Building</h3>
+          <p><strong>Location:</strong> Adama</p>
+          <p><strong>Duration:</strong> Jan 2023 – Oct 2024</p>
+          <div class="progress">
+            <span>Progress: 100%</span>
+            <div class="bar"><div style="width:100%; background:#8a8a8a;"></div></div>
+          </div>
+          <p><strong>Engineer:</strong> Eng. Yonas L.</p>
+          <span class="status completed">Completed</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="completed2.jpg" alt="Horizon Estate">
+        <div class="project-card-content">
+          <h3>Horizon Estate</h3>
+          <p><strong>Location:</strong> Bahir Dar</p>
+          <p><strong>Duration:</strong> Feb 2022 – Mar 2024</p>
+          <div class="progress">
+            <span>Progress: 100%</span>
+            <div class="bar"><div style="width:100%; background:#8a8a8a;"></div></div>
+          </div>
+          <p><strong>Engineer:</strong> Eng. Lemlem M.</p>
+          <span class="status completed">Completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    &copy; 2025 CPMS — Construction Project Management System. All Rights Reserved.
+  </footer>
+
+  <!-- Optional: Animate progress bars -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".bar div").forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = "0";
+        setTimeout(() => bar.style.width = width, 300);
+      });
+    });
+  </script>
+</body>
+</html>
