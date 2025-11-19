@@ -11,6 +11,26 @@
     <title>Bahiru Construction PLC - Building Your Vision with Precision</title>
 </head>
 <body>
+    <!-- Navigation Bar (Hidden initially, appears on scroll) -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">🏗️ Bahiru Construction</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
         <div class="hero-container">
@@ -21,7 +41,7 @@
                 <button class="cta-button" id="exploreBtn">Explore Our Work</button>
             </div>
             
-            <!-- Right Content - Animated Crane -->
+
             <div class="hero-visual">
                 <svg class="crane-animation" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
                     <!-- Ground -->
@@ -137,15 +157,15 @@
                     <!-- Stats -->
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-number" data-target="10" data-suffix="+">0</div>
                             <div class="stat-label">+ Years Experience</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-target="120">0</div>
+                            <div class="stat-number" data-target="120" data-suffix="+">0</div>
                             <div class="stat-label">+ Projects Completed</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-number" data-target="15" data-suffix="+">0</div>
                             <div class="stat-label">+ Expert Engineers</div>
                         </div>
                     </div>
@@ -225,6 +245,293 @@
                 </div>
             </div>
     </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-divider-top"></div>
+        <div class="projects-wrapper">
+            <div class="projects-header">
+                <h2 class="projects-title">Our Projects</h2>
+                <div class="title-underline"></div>
+                <p class="projects-subtitle">Building excellence across Ethiopia with precision and dedication</p>
+            </div>
+            
+            <!-- Summary Stats -->
+            <div class="projects-summary">
+                <div class="summary-card">
+                    <div class="summary-number" data-target="12">0</div>
+                    <div class="summary-label">Active Projects</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number" data-target="8">0</div>
+                    <div class="summary-label">Completed Projects</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number" data-target="435">0</div>
+                    <div class="summary-label">Total Workforce</div>
+                </div>
+            </div>
+            
+            <!-- Ongoing Projects -->
+            <div class="projects-category">
+                <h3 class="category-title">Ongoing Projects</h3>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
+                                <rect x="50" y="50" width="300" height="150" fill="#777C6D" opacity="0.2" rx="5"/>
+                                <rect x="80" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="160" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="240" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="80" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="160" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="240" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="project-card-content">
+                            <h4 class="project-name">Abaymado Apartments</h4>
+                            <p class="project-detail"><strong>Location:</strong> Ayertena, BahirDar</p>
+                            <p class="project-detail"><strong>Duration:</strong> Jan 2025 – Dec 2025</p>
+                            <div class="project-progress">
+                                <div class="progress-label">Progress: <span>70%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <p class="project-detail"><strong>Engineer:</strong> Eng. Bekele M.</p>
+                            <span class="project-status status-ongoing">Ongoing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
+                                <path d="M 200 50 L 100 200 L 300 200 Z" fill="#777C6D" opacity="0.2"/>
+                                <rect x="150" y="200" width="100" height="30" fill="#777C6D" opacity="0.3"/>
+                                <line x1="200" y1="50" x2="200" y2="200" stroke="#B7B89F" stroke-width="2" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="project-card-content">
+                            <h4 class="project-name">Unity Bridge</h4>
+                            <p class="project-detail"><strong>Location:</strong> Jimma</p>
+                            <p class="project-detail"><strong>Duration:</strong> Dec 2024 – Aug 2025</p>
+                            <div class="project-progress">
+                                <div class="progress-label">Progress: <span>82%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="82"></div>
+                                </div>
+                            </div>
+                            <p class="project-detail"><strong>Engineer:</strong> Eng. Samuel G.</p>
+                            <span class="project-status status-ongoing">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Completed Projects -->
+            <div class="projects-category">
+                <h3 class="category-title">Completed Projects</h3>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
+                                <rect x="100" y="50" width="200" height="180" fill="#777C6D" opacity="0.2" rx="5"/>
+                                <rect x="130" y="80" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="200" y="80" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="130" y="140" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="200" y="140" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="project-card-content">
+                            <h4 class="project-name">Ovid Building</h4>
+                            <p class="project-detail"><strong>Location:</strong> Adama</p>
+                            <p class="project-detail"><strong>Duration:</strong> Jan 2023 – Oct 2024</p>
+                            <div class="project-progress">
+                                <div class="progress-label">Progress: <span>100%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill completed" data-progress="100"></div>
+                                </div>
+                            </div>
+                            <p class="project-detail"><strong>Engineer:</strong> Eng. Yonas L.</p>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
+                                <rect x="50" y="100" width="300" height="120" fill="#777C6D" opacity="0.2" rx="5"/>
+                                <rect x="80" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="140" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="200" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
+                                <rect x="260" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="project-card-content">
+                            <h4 class="project-name">Horizon Estate</h4>
+                            <p class="project-detail"><strong>Location:</strong> Bahir Dar</p>
+                            <p class="project-detail"><strong>Duration:</strong> Feb 2022 – Mar 2024</p>
+                            <div class="project-progress">
+                                <div class="progress-label">Progress: <span>100%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill completed" data-progress="100"></div>
+                                </div>
+                            </div>
+                            <p class="project-detail"><strong>Engineer:</strong> Eng. Lemlem M.</p>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider-bottom"></div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-divider-top"></div>
+        <div class="testimonials-wrapper">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">What Our Partners Say</h2>
+                <div class="title-underline"></div>
+                <p class="testimonials-subtitle">Trusted by engineers, contractors, and landowners across the country</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3 class="testimonial-name">Eng. Hana Tadesse</h3>
+                    <p class="testimonial-role">Site Engineer — Addis Ababa</p>
+                    <p class="testimonial-text">"CPMS has transformed how we manage daily tasks and track site progress. The visual dashboard saves hours of paperwork each week."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3 class="testimonial-name">Mr. Solomon Girma</h3>
+                    <p class="testimonial-role">Contractor — Bahir Dar</p>
+                    <p class="testimonial-text">"The automation of reports and budget tracking has reduced errors drastically. It's reliable, simple, and very effective."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3 class="testimonial-name">Mrs. Meseret Alemu</h3>
+                    <p class="testimonial-role">Landowner — Adama</p>
+                    <p class="testimonial-text">"I love how transparent the system is. I can check progress and financial updates anytime from my phone."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3 class="testimonial-name">Eng. Dawit Kebede</h3>
+                    <p class="testimonial-role">Project Manager — Jimma</p>
+                    <p class="testimonial-text">"CPMS bridges the communication gap between field and office teams. It keeps everyone accountable and aligned."</p>
+                </div>
+            </div>
+            
+            <!-- Highlighted Testimonial -->
+            <div class="testimonial-highlight">
+                <p class="highlight-quote">"Since adopting CPMS, our team's efficiency increased by 40%. We now deliver projects faster, with complete clarity over timelines and budgets."</p>
+                <p class="highlight-author">— National Construction Group, 2025</p>
+            </div>
+        </div>
+        <div class="section-divider-bottom"></div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-divider-top"></div>
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h2 class="contact-title">Get in Touch</h2>
+                <div class="title-underline"></div>
+                <p class="contact-subtitle">We'd love to hear from you. Reach out to our team anytime!</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Info Cards -->
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <div class="info-icon">📍</div>
+                        <h3 class="info-title">Office Address</h3>
+                        <p class="info-text">CPMS Headquarters<br>BahirDar, Ethiopia</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">📞</div>
+                        <h3 class="info-title">Phone</h3>
+                        <p class="info-text">+251 911 234 567<br>+251 920 345 678</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3 class="info-title">Email</h3>
+                        <p class="info-text">info@cpms.com<br>support@cpms.com</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3 class="info-title">Working Hours</h3>
+                        <p class="info-text">Mon – Fri: 8:30 AM – 6:00 PM<br>Sat: 9:00 AM – 1:00 PM</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- GSAP CDN -->
