@@ -245,18 +245,11 @@ body {
   transform: translateX(50px);
 }
 
-.crane-animation {
+.construction-helmet {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
-  filter: drop-shadow(0 10px 30px rgba(119, 124, 109, 0.15));
-}
-
-/* SVG Animation Elements */
-.concrete-block {
-  transform-origin: 300px 320px;
-  transform-box: fill-box;
-  will-change: transform;
+  filter: drop-shadow(0 10px 30px rgba(240, 180, 41, 0.2));
 }
 
 .crane-jib,
@@ -1254,12 +1247,16 @@ body {
   }
   
   .hero-visual {
-    order: -1;
+    order: 1;
     max-width: 100%;
   }
   
-  .crane-animation {
-    max-width: 100%;
+  .hero-content {
+    order: 0;
+  }
+  
+  .construction-helmet {
+    max-width: 400px;
   }
   
   .scroll-indicator {
@@ -1276,7 +1273,11 @@ body {
   }
   
   .about-visual {
-    order: -1;
+    order: 1;
+  }
+  
+  .about-text {
+    order: 0;
   }
   
   .about-description {
@@ -1340,8 +1341,8 @@ body {
     max-width: 300px;
   }
   
-  .crane-animation {
-    max-width: 100%;
+  .construction-helmet {
+    max-width: 300px;
   }
   
   .about-section {

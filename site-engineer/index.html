@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPMS - Site Engineer Dashboard</title>
+    <link rel="stylesheet" href="siteengineer.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Logo Section -->
+            <div class="sidebar-logo">
+                <div class="logo-circle">
+                    <img src="assets/logo.png" alt="CPMS Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">🏗️</div>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a href="#dashboard" class="nav-link" data-page="dashboard">
+                            <span class="nav-icon"></span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#daily-progress" class="nav-link" data-page="daily-progress">
+                            <span class="nav-icon"></span>
+                            <span class="nav-text">Daily Progress</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#material-request" class="nav-link" data-page="material-request">
+                            <span class="nav-icon"></span>
+                            <span class="nav-text">Material Request</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#workers-activity" class="nav-link" data-page="workers-activity">
+                            <span class="nav-icon"></span>
+                            <span class="nav-text">Workers Activity</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- User Section -->
+            <div class="sidebar-user">
+                <div class="user-avatar">
+                    <img src="assets/avatar.png" alt="User Avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="avatar-placeholder">EB</div>
+                </div>
+                <div class="user-info">
+                    <div class="user-name">Eng. Bekalu</div>
+                    <button class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="mainContent">
+        <!-- Dashboard View -->
+        <div class="view-container active" id="dashboard-view">
+            <div class="content-header">
+                <h1 class="page-title">Dashboard</h1>
+                <p class="page-subtitle">Site Engineer Overview</p>
+            </div>
+
+            <!-- Row 1: Two Cards -->
+            <div class="cards-row row-1">
+                <div class="card card-wide">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Wide Card</span>
+                    </div>
+                </div>
+                <div class="card card-tall">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Tall Card</span>
+                    </div>
+                </div>
+           
+            
+                <div class="card card-medium">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Medium Card</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-row row-3">
+                <div class="card card-full">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Full Width Card</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Progress View -->
+        <div class="view-container" id="daily-progress-view">
+            <div class="content-header">
+                <h1 class="page-title">Daily Progress</h1>
+                <p class="page-subtitle">Track daily construction activities</p>
+            </div>
+
+            <div class="cards-row">
+                <div class="card card-full">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Daily Progress Content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-container" id="material-request-view">
+            <div class="content-header">
+                <h1 class="page-title">Material Request</h1>
+                <p class="page-subtitle">Manage material requisitions</p>
+            </div>
+
+            <div class="cards-row">
+                <div class="card card-full">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Material Request Content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workers Activity View -->
+        <div class="view-container" id="workers-activity-view">
+            <div class="content-header">
+                <h1 class="page-title">Workers Activity</h1>
+                <p class="page-subtitle">Monitor workforce and attendance</p>
+            </div>
+
+            <div class="cards-row">
+                <div class="card card-full">
+                    <div class="card-placeholder">
+                        <span class="placeholder-text">Workers Activity Content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

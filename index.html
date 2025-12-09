@@ -11,7 +11,6 @@
     <title>Bahiru Construction PLC - Building Your Vision with Precision</title>
 </head>
 <body>
-    <!-- Navigation Bar (Hidden initially, appears on scroll) -->
     <nav class="main-nav" id="mainNav">
         <div class="nav-container">
             <div class="nav-logo">🏗️ Bahiru Construction</div>
@@ -31,10 +30,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+  
     <section class="hero-section" id="hero">
         <div class="hero-container">
-            <!-- Left Content -->
+           
             <div class="hero-content">
                 <h1 class="hero-headline">Building Your Vision with Precision</h1>
                 <p class="hero-subtext">A trusted contractor delivering top-quality construction and project management services across Ethiopia.</p>
@@ -43,66 +42,151 @@
             
 
             <div class="hero-visual">
-                <svg class="crane-animation" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Ground -->
-                    <rect x="0" y="450" width="600" height="50" fill="#B7B89F" opacity="0.3"/>
+                <svg class="construction-helmet" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="helmetGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f0b429;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#d99d1f;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="brimGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#d99d1f;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#c28a1a;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="shadow">
+                            <feDropShadow dx="0" dy="15" stdDeviation="20" flood-opacity="0.2"/>
+                        </filter>
+                    </defs>
                     
-                    <!-- Crane Base (Centered at x=300) -->
-                    <rect x="260" y="400" width="80" height="50" fill="#777C6D" rx="5"/>
-                    <rect x="270" y="380" width="60" height="20" fill="#777C6D"/>
+                    <!-- Ground shadow -->
+                    <ellipse cx="250" cy="400" rx="180" ry="25" fill="#777C6D" opacity="0.15"/>
                     
-                    <!-- Crane Tower (Connected to base center) -->
-                    <rect x="295" y="200" width="20" height="200" fill="#777C6D"/>
-                    <rect x="290" y="200" width="30" height="15" fill="#777C6D" rx="2"/>
+                    <!-- Helmet main body (shorter height) -->
+                    <path d="M 150 280 Q 150 180 250 160 Q 350 180 350 280 L 350 295 Q 350 310 330 318 L 170 318 Q 150 310 150 295 Z" 
+                          fill="url(#helmetGradient)" 
+                          filter="url(#shadow)"/>
                     
-                    <!-- Crane Jib Group (rotates from tower center) -->
-                    <g class="crane-jib">
-                        <!-- Horizontal arm extending both sides from center -->
-                        <rect x="100" y="210" width="200" height="12" fill="#777C6D" rx="6"/>
-                        <rect x="300" y="210" width="200" height="12" fill="#777C6D" rx="6"/>
-                        <!-- Center connection point -->
-                        <circle cx="300" cy="216" r="8" fill="#555"/>
-                        <!-- Counterweight -->
-                        <rect x="110" y="205" width="40" height="22" fill="#555" rx="3"/>
-                    </g>
+                    <!-- Helmet brim -->
+                    <ellipse cx="250" cy="318" rx="100" ry="18" fill="url(#brimGradient)"/>
+                    <path d="M 150 318 Q 150 328 250 332 Q 350 328 350 318 Q 350 323 250 327 Q 150 323 150 318" 
+                          fill="#c28a1a" opacity="0.6"/>
                     
-                    <!-- Cable Group (moves with jib rotation) -->
-                    <g class="cable-group">
-                        <line class="crane-cable" x1="300" y1="216" x2="300" y2="300" stroke="#555" stroke-width="3" stroke-linecap="round"/>
-                    </g>
+                    <!-- Helmet ridge/reinforcement -->
+                    <path d="M 180 220 Q 250 205 320 220" 
+                          stroke="#d99d1f" 
+                          stroke-width="8" 
+                          fill="none" 
+                          stroke-linecap="round"/>
                     
-                    <!-- Hook Group (moves with cable) -->
-                    <g class="hook-group">
-                        <g class="crane-hook">
-                            <line x1="300" y1="300" x2="300" y2="320" stroke="#555" stroke-width="4" stroke-linecap="round"/>
-                            <path d="M 290 320 L 300 330 L 310 320" stroke="#555" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                    </g>
+                    <!-- Helmet ventilation slots -->
+                    <rect x="200" y="240" width="30" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
+                    <rect x="270" y="240" width="30" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
                     
-                    <!-- Concrete Block (will be moved) -->
-                    <g class="concrete-block">
-                        <rect x="270" y="300" width="60" height="40" fill="#CBCBCB" rx="3"/>
-                        <rect x="275" y="305" width="50" height="30" fill="#999" rx="2" opacity="0.5"/>
-                        <line x1="280" y1="310" x2="320" y2="310" stroke="#777" stroke-width="1" opacity="0.3"/>
-                        <line x1="280" y1="320" x2="320" y2="320" stroke="#777" stroke-width="1" opacity="0.3"/>
-                        <line x1="280" y1="330" x2="320" y2="330" stroke="#777" stroke-width="1" opacity="0.3"/>
-                    </g>
+                    <rect x="190" y="265" width="35" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
+                    <rect x="275" y="265" width="35" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
+                    
+                    <!-- Helmet highlights -->
+                    <path d="M 180 190 Q 200 175 230 178" 
+                          stroke="#fff" 
+                          stroke-width="6" 
+                          fill="none" 
+                          opacity="0.4" 
+                          stroke-linecap="round"/>
+                    
+                    <ellipse cx="210" cy="205" rx="25" ry="30" fill="#fff" opacity="0.15"/>
+                    
+                    <!-- Side straps/adjustment -->
+                    <rect x="145" y="285" width="15" height="25" rx="3" fill="#777C6D" opacity="0.6"/>
+                    <rect x="340" y="285" width="15" height="25" rx="3" fill="#777C6D" opacity="0.6"/>
+                    
+                    <circle cx="152" cy="297" r="4" fill="#555"/>
+                    <circle cx="347" cy="297" r="4" fill="#555"/>
+                    
+                    <!-- Chin strap - Left side -->
+                    <path d="M 152 305 Q 152 330 180 355" 
+                          stroke="#2c2c2c" 
+                          stroke-width="6" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          opacity="0.7"/>
+                    
+                    <!-- Chin strap - Right side -->
+                    <path d="M 347 305 Q 347 330 320 355" 
+                          stroke="#2c2c2c" 
+                          stroke-width="6" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          opacity="0.7"/>
+                    
+                    <!-- Chin strap - Bottom connector (under chin) -->
+                    <path d="M 180 355 Q 220 370 250 372 Q 280 370 320 355" 
+                          stroke="#2c2c2c" 
+                          stroke-width="6" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          opacity="0.7"/>
+                    
+                    <!-- Chin strap buckle/adjuster -->
+                    <rect x="240" y="367" width="20" height="12" rx="2" fill="#777C6D" opacity="0.8"/>
+                    <circle cx="245" cy="373" r="2" fill="#555"/>
+                    <circle cx="255" cy="373" r="2" fill="#555"/>
+                    
+                    <!-- Strap highlights for depth -->
+                    <path d="M 155 308 Q 155 330 178 353" 
+                          stroke="#444" 
+                          stroke-width="2" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          opacity="0.3"/>
+                    
+                    <path d="M 344 308 Q 344 330 322 353" 
+                          stroke="#444" 
+                          stroke-width="2" 
+                          fill="none" 
+                          stroke-linecap="round"
+                          opacity="0.3"/>
+                    
+                    <!-- Brand/Logo placeholder -->
+                    <circle cx="250" cy="220" r="25" fill="#fff" opacity="0.2"/>
+                    <text x="250" y="230" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+                          fill="#d99d1f" text-anchor="middle">BC</text>
                 </svg>
-            </div>
+            </div> 
         </div>
         
-        <!-- Scroll Indicator -->
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
         </div>
     </section>
     
-    <!-- About Us Section -->
     <section class="about-section" id="about">
         <div class="section-divider-top"></div>
         <div class="about-container">
             <div class="about-content">
-                <!-- Left Side - Image/Illustration -->
+                <!-- Left Side - Content -->
+                <div class="about-text">
+                    <h2 class="about-heading">About Bahiru Construction PLC</h2>
+                    <p class="about-description">
+                        With decades of industry expertise, Bahiru Construction PLC delivers reliable, innovative, and sustainable projects — turning blueprints into reality with precision and integrity.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                            <div class="stat-label">+ Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="120" data-suffix="+">0</div>
+                            <div class="stat-label">+ Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                            <div class="stat-label">+ Expert Engineers</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Image/Illustration -->
                 <div class="about-visual">
                     <div class="about-image-wrapper">
                         <svg class="construction-illustration" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
@@ -144,30 +228,6 @@
                             <rect x="200" y="290" width="35" height="25" fill="#CBCBCB" opacity="0.5" rx="2"/>
                             <rect x="100" y="270" width="30" height="20" fill="#CBCBCB" opacity="0.5" rx="2"/>
                         </svg>
-                    </div>
-                </div>
-                
-                <!-- Right Side - Content -->
-                <div class="about-text">
-                    <h2 class="about-heading">About Bahiru Construction PLC</h2>
-                    <p class="about-description">
-                        With decades of industry expertise, Bahiru Construction PLC delivers reliable, innovative, and sustainable projects — turning blueprints into reality with precision and integrity.
-                    </p>
-                    
-                    <!-- Stats -->
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="10" data-suffix="+">0</div>
-                            <div class="stat-label">+ Years Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="120" data-suffix="+">0</div>
-                            <div class="stat-label">+ Projects Completed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="15" data-suffix="+">0</div>
-                            <div class="stat-label">+ Expert Engineers</div>
-                        </div>
                     </div>
                 </div>
             </div>
