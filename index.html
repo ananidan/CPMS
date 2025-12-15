@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="Static/CSS/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link type="text/css" rel="stylesheet" href="Static/CSS/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="8" fill="%23e6e6e6"/><path d="M10 38c4-12 24-18 34-12 4 2 8 6 8 6s-8 6-14 6H18c-4 0-6 2-8 4z" fill="%23333333"/><rect x="6" y="42" width="52" height="8" rx="4" fill="%234d4d4d"/></svg>'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Bahiru Construction PLC - Building Your Vision with Precision</title>
 </head>
+
 <body>
     <nav class="main-nav" id="mainNav">
         <div class="nav-container">
-            <div class="nav-logo">🏗️ Bahiru Construction</div>
+            <div class="nav-logo"><i class="fas fa-hard-hat"></i> Bahiru Construction</div>
             <ul class="nav-links">
                 <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -21,6 +28,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link">Log in</a></li>
             </ul>
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                 <span></span>
@@ -30,16 +38,17 @@
         </div>
     </nav>
 
-  
+
     <section class="hero-section" id="hero">
         <div class="hero-container">
-           
+
             <div class="hero-content">
                 <h1 class="hero-headline">Building Your Vision with Precision</h1>
-                <p class="hero-subtext">A trusted contractor delivering top-quality construction and project management services across Ethiopia.</p>
+                <p class="hero-subtext">A trusted contractor delivering top-quality construction and project management
+                    services across Ethiopia.</p>
                 <button class="cta-button" id="exploreBtn">Explore Our Work</button>
             </div>
-            
+
 
             <div class="hero-visual">
                 <svg class="construction-helmet" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
@@ -53,111 +62,84 @@
                             <stop offset="100%" style="stop-color:#c28a1a;stop-opacity:1" />
                         </linearGradient>
                         <filter id="shadow">
-                            <feDropShadow dx="0" dy="15" stdDeviation="20" flood-opacity="0.2"/>
+                            <feDropShadow dx="0" dy="15" stdDeviation="20" flood-opacity="0.2" />
                         </filter>
                     </defs>
-                    
+
                     <!-- Ground shadow -->
-                    <ellipse cx="250" cy="400" rx="180" ry="25" fill="#777C6D" opacity="0.15"/>
-                    
+                    <ellipse cx="250" cy="400" rx="180" ry="25" fill="#777C6D" opacity="0.15" />
+
                     <!-- Helmet main body (shorter height) -->
-                    <path d="M 150 280 Q 150 180 250 160 Q 350 180 350 280 L 350 295 Q 350 310 330 318 L 170 318 Q 150 310 150 295 Z" 
-                          fill="url(#helmetGradient)" 
-                          filter="url(#shadow)"/>
-                    
+                    <path
+                        d="M 150 280 Q 150 180 250 160 Q 350 180 350 280 L 350 295 Q 350 310 330 318 L 170 318 Q 150 310 150 295 Z"
+                        fill="url(#helmetGradient)" filter="url(#shadow)" />
+
                     <!-- Helmet brim -->
-                    <ellipse cx="250" cy="318" rx="100" ry="18" fill="url(#brimGradient)"/>
-                    <path d="M 150 318 Q 150 328 250 332 Q 350 328 350 318 Q 350 323 250 327 Q 150 323 150 318" 
-                          fill="#c28a1a" opacity="0.6"/>
-                    
+                    <ellipse cx="250" cy="318" rx="100" ry="18" fill="url(#brimGradient)" />
+                    <path d="M 150 318 Q 150 328 250 332 Q 350 328 350 318 Q 350 323 250 327 Q 150 323 150 318"
+                        fill="#c28a1a" opacity="0.6" />
+
                     <!-- Helmet ridge/reinforcement -->
-                    <path d="M 180 220 Q 250 205 320 220" 
-                          stroke="#d99d1f" 
-                          stroke-width="8" 
-                          fill="none" 
-                          stroke-linecap="round"/>
-                    
+                    <path d="M 180 220 Q 250 205 320 220" stroke="#d99d1f" stroke-width="8" fill="none"
+                        stroke-linecap="round" />
+
                     <!-- Helmet ventilation slots -->
-                    <rect x="200" y="240" width="30" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
-                    <rect x="270" y="240" width="30" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
-                    
-                    <rect x="190" y="265" width="35" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
-                    <rect x="275" y="265" width="35" height="8" rx="4" fill="#d99d1f" opacity="0.5"/>
-                    
+                    <rect x="200" y="240" width="30" height="8" rx="4" fill="#d99d1f" opacity="0.5" />
+                    <rect x="270" y="240" width="30" height="8" rx="4" fill="#d99d1f" opacity="0.5" />
+
+                    <rect x="190" y="265" width="35" height="8" rx="4" fill="#d99d1f" opacity="0.5" />
+                    <rect x="275" y="265" width="35" height="8" rx="4" fill="#d99d1f" opacity="0.5" />
+
                     <!-- Helmet highlights -->
-                    <path d="M 180 190 Q 200 175 230 178" 
-                          stroke="#fff" 
-                          stroke-width="6" 
-                          fill="none" 
-                          opacity="0.4" 
-                          stroke-linecap="round"/>
-                    
-                    <ellipse cx="210" cy="205" rx="25" ry="30" fill="#fff" opacity="0.15"/>
-                    
+                    <path d="M 180 190 Q 200 175 230 178" stroke="#fff" stroke-width="6" fill="none" opacity="0.4"
+                        stroke-linecap="round" />
+
+                    <ellipse cx="210" cy="205" rx="25" ry="30" fill="#fff" opacity="0.15" />
+
                     <!-- Side straps/adjustment -->
-                    <rect x="145" y="285" width="15" height="25" rx="3" fill="#777C6D" opacity="0.6"/>
-                    <rect x="340" y="285" width="15" height="25" rx="3" fill="#777C6D" opacity="0.6"/>
-                    
-                    <circle cx="152" cy="297" r="4" fill="#555"/>
-                    <circle cx="347" cy="297" r="4" fill="#555"/>
-                    
+                    <rect x="145" y="285" width="15" height="25" rx="3" fill="#777C6D" opacity="0.6" />
+                    <rect x="340" y="285" width="15" height="25" rx="3" fill="#777C6D" opacity="0.6" />
+
+                    <circle cx="152" cy="297" r="4" fill="#555" />
+                    <circle cx="347" cy="297" r="4" fill="#555" />
+
                     <!-- Chin strap - Left side -->
-                    <path d="M 152 305 Q 152 330 180 355" 
-                          stroke="#2c2c2c" 
-                          stroke-width="6" 
-                          fill="none" 
-                          stroke-linecap="round"
-                          opacity="0.7"/>
-                    
+                    <path d="M 152 305 Q 152 330 180 355" stroke="#2c2c2c" stroke-width="6" fill="none"
+                        stroke-linecap="round" opacity="0.7" />
+
                     <!-- Chin strap - Right side -->
-                    <path d="M 347 305 Q 347 330 320 355" 
-                          stroke="#2c2c2c" 
-                          stroke-width="6" 
-                          fill="none" 
-                          stroke-linecap="round"
-                          opacity="0.7"/>
-                    
+                    <path d="M 347 305 Q 347 330 320 355" stroke="#2c2c2c" stroke-width="6" fill="none"
+                        stroke-linecap="round" opacity="0.7" />
+
                     <!-- Chin strap - Bottom connector (under chin) -->
-                    <path d="M 180 355 Q 220 370 250 372 Q 280 370 320 355" 
-                          stroke="#2c2c2c" 
-                          stroke-width="6" 
-                          fill="none" 
-                          stroke-linecap="round"
-                          opacity="0.7"/>
-                    
+                    <path d="M 180 355 Q 220 370 250 372 Q 280 370 320 355" stroke="#2c2c2c" stroke-width="6"
+                        fill="none" stroke-linecap="round" opacity="0.7" />
+
                     <!-- Chin strap buckle/adjuster -->
-                    <rect x="240" y="367" width="20" height="12" rx="2" fill="#777C6D" opacity="0.8"/>
-                    <circle cx="245" cy="373" r="2" fill="#555"/>
-                    <circle cx="255" cy="373" r="2" fill="#555"/>
-                    
+                    <rect x="240" y="367" width="20" height="12" rx="2" fill="#777C6D" opacity="0.8" />
+                    <circle cx="245" cy="373" r="2" fill="#555" />
+                    <circle cx="255" cy="373" r="2" fill="#555" />
+
                     <!-- Strap highlights for depth -->
-                    <path d="M 155 308 Q 155 330 178 353" 
-                          stroke="#444" 
-                          stroke-width="2" 
-                          fill="none" 
-                          stroke-linecap="round"
-                          opacity="0.3"/>
-                    
-                    <path d="M 344 308 Q 344 330 322 353" 
-                          stroke="#444" 
-                          stroke-width="2" 
-                          fill="none" 
-                          stroke-linecap="round"
-                          opacity="0.3"/>
-                    
+                    <path d="M 155 308 Q 155 330 178 353" stroke="#444" stroke-width="2" fill="none"
+                        stroke-linecap="round" opacity="0.3" />
+
+                    <path d="M 344 308 Q 344 330 322 353" stroke="#444" stroke-width="2" fill="none"
+                        stroke-linecap="round" opacity="0.3" />
+
                     <!-- Brand/Logo placeholder -->
-                    <circle cx="250" cy="220" r="25" fill="#fff" opacity="0.2"/>
-                    <text x="250" y="230" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
-                          fill="#d99d1f" text-anchor="middle">BC</text>
+                    <circle cx="250" cy="220" r="25" fill="#fff" opacity="0.2" />
+                    <text x="250" y="230" font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+                        fill="#d99d1f" text-anchor="middle">BC</text>
                 </svg>
-            </div> 
+            </div>
         </div>
-        
+
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
         </div>
     </section>
-    
+
     <section class="about-section" id="about">
         <div class="section-divider-top"></div>
         <div class="about-container">
@@ -166,9 +148,10 @@
                 <div class="about-text">
                     <h2 class="about-heading">About Bahiru Construction PLC</h2>
                     <p class="about-description">
-                        With decades of industry expertise, Bahiru Construction PLC delivers reliable, innovative, and sustainable projects — turning blueprints into reality with precision and integrity.
+                        With decades of industry expertise, Bahiru Construction PLC delivers reliable, innovative, and
+                        sustainable projects — turning blueprints into reality with precision and integrity.
                     </p>
-                    
+
                     <!-- Stats -->
                     <div class="stats-grid">
                         <div class="stat-item">
@@ -185,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Right Side - Image/Illustration -->
                 <div class="about-visual">
                     <div class="about-image-wrapper">
@@ -201,32 +184,32 @@
                                     <stop offset="100%" style="stop-color:#777C6D;stop-opacity:0.2" />
                                 </linearGradient>
                             </defs>
-                            
+
                             <!-- Sky -->
-                            <rect x="0" y="0" width="500" height="250" fill="url(#skyGradient)"/>
-                            
+                            <rect x="0" y="0" width="500" height="250" fill="url(#skyGradient)" />
+
                             <!-- Ground -->
-                            <rect x="0" y="250" width="500" height="150" fill="url(#groundGradient)"/>
-                            
+                            <rect x="0" y="250" width="500" height="150" fill="url(#groundGradient)" />
+
                             <!-- Construction crane silhouette -->
                             <g class="crane-silhouette">
-                                <rect x="50" y="200" width="15" height="80" fill="#777C6D" opacity="0.6"/>
-                                <rect x="45" y="200" width="25" height="8" fill="#777C6D" opacity="0.6"/>
-                                <rect x="50" y="150" width="200" height="6" fill="#777C6D" opacity="0.5"/>
-                                <circle cx="250" cy="153" r="8" fill="#777C6D" opacity="0.6"/>
+                                <rect x="50" y="200" width="15" height="80" fill="#777C6D" opacity="0.6" />
+                                <rect x="45" y="200" width="25" height="8" fill="#777C6D" opacity="0.6" />
+                                <rect x="50" y="150" width="200" height="6" fill="#777C6D" opacity="0.5" />
+                                <circle cx="250" cy="153" r="8" fill="#777C6D" opacity="0.6" />
                             </g>
-                            
+
                             <!-- Building structure -->
-                            <rect x="300" y="180" width="80" height="70" fill="#CBCBCB" opacity="0.4" rx="2"/>
-                            <rect x="310" y="190" width="20" height="20" fill="#777C6D" opacity="0.3"/>
-                            <rect x="340" y="190" width="20" height="20" fill="#777C6D" opacity="0.3"/>
-                            <rect x="310" y="220" width="20" height="20" fill="#777C6D" opacity="0.3"/>
-                            <rect x="340" y="220" width="20" height="20" fill="#777C6D" opacity="0.3"/>
-                            
+                            <rect x="300" y="180" width="80" height="70" fill="#CBCBCB" opacity="0.4" rx="2" />
+                            <rect x="310" y="190" width="20" height="20" fill="#777C6D" opacity="0.3" />
+                            <rect x="340" y="190" width="20" height="20" fill="#777C6D" opacity="0.3" />
+                            <rect x="310" y="220" width="20" height="20" fill="#777C6D" opacity="0.3" />
+                            <rect x="340" y="220" width="20" height="20" fill="#777C6D" opacity="0.3" />
+
                             <!-- Construction elements -->
-                            <rect x="150" y="280" width="40" height="30" fill="#CBCBCB" opacity="0.5" rx="2"/>
-                            <rect x="200" y="290" width="35" height="25" fill="#CBCBCB" opacity="0.5" rx="2"/>
-                            <rect x="100" y="270" width="30" height="20" fill="#CBCBCB" opacity="0.5" rx="2"/>
+                            <rect x="150" y="280" width="40" height="30" fill="#CBCBCB" opacity="0.5" rx="2" />
+                            <rect x="200" y="290" width="35" height="25" fill="#CBCBCB" opacity="0.5" rx="2" />
+                            <rect x="100" y="270" width="30" height="20" fill="#CBCBCB" opacity="0.5" rx="2" />
                         </svg>
                     </div>
                 </div>
@@ -234,7 +217,7 @@
         </div>
         <div class="section-divider-bottom"></div>
     </section>
-    
+
     <!-- Our Services Section -->
     <section class="services-section" id="services">
         <div class="services-wrapper">
@@ -242,71 +225,85 @@
                 <h2 class="services-title">Our Services</h2>
                 <div class="title-underline"></div>
             </div>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="20" y="30" width="60" height="50" fill="none" stroke="#777C6D" stroke-width="3" rx="3"/>
-                            <rect x="30" y="40" width="15" height="15" fill="#B7B89F" opacity="0.3"/>
-                            <rect x="50" y="40" width="15" height="15" fill="#B7B89F" opacity="0.3"/>
-                            <rect x="30" y="60" width="15" height="15" fill="#B7B89F" opacity="0.3"/>
-                            <rect x="50" y="60" width="15" height="15" fill="#B7B89F" opacity="0.3"/>
-                            <path d="M 50 20 L 50 30" stroke="#777C6D" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="50" cy="15" r="5" fill="#777C6D"/>
+                            <rect x="20" y="30" width="60" height="50" fill="none" stroke="#777C6D" stroke-width="3"
+                                rx="3" />
+                            <rect x="30" y="40" width="15" height="15" fill="#B7B89F" opacity="0.3" />
+                            <rect x="50" y="40" width="15" height="15" fill="#B7B89F" opacity="0.3" />
+                            <rect x="30" y="60" width="15" height="15" fill="#B7B89F" opacity="0.3" />
+                            <rect x="50" y="60" width="15" height="15" fill="#B7B89F" opacity="0.3" />
+                            <path d="M 50 20 L 50 30" stroke="#777C6D" stroke-width="3" stroke-linecap="round" />
+                            <circle cx="50" cy="15" r="5" fill="#777C6D" />
                         </svg>
                     </div>
                     <h3 class="service-title">Project Construction</h3>
-                    <p class="service-description">Comprehensive construction services from foundation to completion, ensuring quality and timely delivery.</p>
+                    <p class="service-description">Comprehensive construction services from foundation to completion,
+                        ensuring quality and timely delivery.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="25" width="50" height="50" fill="none" stroke="#777C6D" stroke-width="3" rx="5"/>
-                            <circle cx="50" cy="50" r="15" fill="none" stroke="#777C6D" stroke-width="2"/>
-                            <line x1="50" y1="35" x2="50" y2="50" stroke="#777C6D" stroke-width="2" stroke-linecap="round"/>
-                            <line x1="50" y1="50" x2="60" y2="50" stroke="#777C6D" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="50" cy="50" r="2" fill="#777C6D"/>
+                            <rect x="25" y="25" width="50" height="50" fill="none" stroke="#777C6D" stroke-width="3"
+                                rx="5" />
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="#777C6D" stroke-width="2" />
+                            <line x1="50" y1="35" x2="50" y2="50" stroke="#777C6D" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="50" y1="50" x2="60" y2="50" stroke="#777C6D" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="50" cy="50" r="2" fill="#777C6D" />
                         </svg>
                     </div>
                     <h3 class="service-title">Project Management</h3>
-                    <p class="service-description">Expert project management ensuring efficient coordination, budget control, and seamless execution.</p>
+                    <p class="service-description">Expert project management ensuring efficient coordination, budget
+                        control, and seamless execution.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M 30 70 L 50 30 L 70 70 Z" fill="none" stroke="#777C6D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <line x1="50" y1="30" x2="50" y2="20" stroke="#777C6D" stroke-width="3" stroke-linecap="round"/>
-                            <line x1="35" y1="60" x2="65" y2="60" stroke="#777C6D" stroke-width="2" stroke-linecap="round"/>
-                            <line x1="40" y1="50" x2="60" y2="50" stroke="#777C6D" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M 30 70 L 50 30 L 70 70 Z" fill="none" stroke="#777C6D" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="50" y1="30" x2="50" y2="20" stroke="#777C6D" stroke-width="3"
+                                stroke-linecap="round" />
+                            <line x1="35" y1="60" x2="65" y2="60" stroke="#777C6D" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="40" y1="50" x2="60" y2="50" stroke="#777C6D" stroke-width="2"
+                                stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3 class="service-title">Architectural Design & Planning</h3>
-                    <p class="service-description">Creative architectural solutions and detailed planning to bring your vision to life with precision.</p>
+                    <p class="service-description">Creative architectural solutions and detailed planning to bring your
+                        vision to life with precision.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="40" width="50" height="40" fill="none" stroke="#777C6D" stroke-width="3" rx="3"/>
-                            <rect x="35" y="50" width="12" height="12" fill="#B7B89F" opacity="0.3"/>
-                            <rect x="53" y="50" width="12" height="12" fill="#B7B89F" opacity="0.3"/>
-                            <rect x="35" y="66" width="12" height="12" fill="#B7B89F" opacity="0.3"/>
-                            <rect x="53" y="66" width="12" height="12" fill="#B7B89F" opacity="0.3"/>
-                            <path d="M 50 30 L 50 40" stroke="#777C6D" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="50" cy="25" r="5" fill="#777C6D"/>
-                            <path d="M 30 25 Q 50 15 70 25" fill="none" stroke="#777C6D" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="25" y="40" width="50" height="40" fill="none" stroke="#777C6D" stroke-width="3"
+                                rx="3" />
+                            <rect x="35" y="50" width="12" height="12" fill="#B7B89F" opacity="0.3" />
+                            <rect x="53" y="50" width="12" height="12" fill="#B7B89F" opacity="0.3" />
+                            <rect x="35" y="66" width="12" height="12" fill="#B7B89F" opacity="0.3" />
+                            <rect x="53" y="66" width="12" height="12" fill="#B7B89F" opacity="0.3" />
+                            <path d="M 50 30 L 50 40" stroke="#777C6D" stroke-width="3" stroke-linecap="round" />
+                            <circle cx="50" cy="25" r="5" fill="#777C6D" />
+                            <path d="M 30 25 Q 50 15 70 25" fill="none" stroke="#777C6D" stroke-width="2"
+                                stroke-linecap="round" />
                         </svg>
                     </div>
                     <h3 class="service-title">Renovation & Maintenance</h3>
-                    <p class="service-description">Professional renovation services and ongoing maintenance to keep your structures in perfect condition.</p>
+                    <p class="service-description">Professional renovation services and ongoing maintenance to keep your
+                        structures in perfect condition.</p>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
-    
+
     <!-- Projects Section -->
     <section class="projects-section" id="projects">
         <div class="section-divider-top"></div>
@@ -316,7 +313,7 @@
                 <div class="title-underline"></div>
                 <p class="projects-subtitle">Building excellence across Ethiopia with precision and dedication</p>
             </div>
-            
+
             <!-- Summary Stats -->
             <div class="projects-summary">
                 <div class="summary-card">
@@ -332,7 +329,7 @@
                     <div class="summary-label">Total Workforce</div>
                 </div>
             </div>
-            
+
             <!-- Ongoing Projects -->
             <div class="projects-category">
                 <h3 class="category-title">Ongoing Projects</h3>
@@ -340,14 +337,14 @@
                     <div class="project-card">
                         <div class="project-image-placeholder">
                             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
-                                <rect x="50" y="50" width="300" height="150" fill="#777C6D" opacity="0.2" rx="5"/>
-                                <rect x="80" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="160" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="240" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="80" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="160" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="240" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3" />
+                                <rect x="50" y="50" width="300" height="150" fill="#777C6D" opacity="0.2" rx="5" />
+                                <rect x="80" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3" />
+                                <rect x="160" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3" />
+                                <rect x="240" y="80" width="60" height="60" fill="#B7B89F" opacity="0.3" />
+                                <rect x="80" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3" />
+                                <rect x="160" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3" />
+                                <rect x="240" y="150" width="60" height="50" fill="#B7B89F" opacity="0.3" />
                             </svg>
                         </div>
                         <div class="project-card-content">
@@ -364,14 +361,15 @@
                             <span class="project-status status-ongoing">Ongoing</span>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-image-placeholder">
                             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
-                                <path d="M 200 50 L 100 200 L 300 200 Z" fill="#777C6D" opacity="0.2"/>
-                                <rect x="150" y="200" width="100" height="30" fill="#777C6D" opacity="0.3"/>
-                                <line x1="200" y1="50" x2="200" y2="200" stroke="#B7B89F" stroke-width="2" opacity="0.3"/>
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3" />
+                                <path d="M 200 50 L 100 200 L 300 200 Z" fill="#777C6D" opacity="0.2" />
+                                <rect x="150" y="200" width="100" height="30" fill="#777C6D" opacity="0.3" />
+                                <line x1="200" y1="50" x2="200" y2="200" stroke="#B7B89F" stroke-width="2"
+                                    opacity="0.3" />
                             </svg>
                         </div>
                         <div class="project-card-content">
@@ -390,7 +388,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Completed Projects -->
             <div class="projects-category">
                 <h3 class="category-title">Completed Projects</h3>
@@ -398,12 +396,12 @@
                     <div class="project-card">
                         <div class="project-image-placeholder">
                             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
-                                <rect x="100" y="50" width="200" height="180" fill="#777C6D" opacity="0.2" rx="5"/>
-                                <rect x="130" y="80" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="200" y="80" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="130" y="140" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="200" y="140" width="50" height="50" fill="#B7B89F" opacity="0.3"/>
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3" />
+                                <rect x="100" y="50" width="200" height="180" fill="#777C6D" opacity="0.2" rx="5" />
+                                <rect x="130" y="80" width="50" height="50" fill="#B7B89F" opacity="0.3" />
+                                <rect x="200" y="80" width="50" height="50" fill="#B7B89F" opacity="0.3" />
+                                <rect x="130" y="140" width="50" height="50" fill="#B7B89F" opacity="0.3" />
+                                <rect x="200" y="140" width="50" height="50" fill="#B7B89F" opacity="0.3" />
                             </svg>
                         </div>
                         <div class="project-card-content">
@@ -420,16 +418,16 @@
                             <span class="project-status status-completed">Completed</span>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-image-placeholder">
                             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3"/>
-                                <rect x="50" y="100" width="300" height="120" fill="#777C6D" opacity="0.2" rx="5"/>
-                                <rect x="80" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="140" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="200" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
-                                <rect x="260" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3"/>
+                                <rect width="400" height="250" fill="#CBCBCB" opacity="0.3" />
+                                <rect x="50" y="100" width="300" height="120" fill="#777C6D" opacity="0.2" rx="5" />
+                                <rect x="80" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3" />
+                                <rect x="140" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3" />
+                                <rect x="200" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3" />
+                                <rect x="260" y="130" width="40" height="40" fill="#B7B89F" opacity="0.3" />
                             </svg>
                         </div>
                         <div class="project-card-content">
@@ -451,7 +449,7 @@
         </div>
         <div class="section-divider-bottom"></div>
     </section>
-    
+
     <!-- Testimonials Section -->
     <section class="testimonials-section" id="testimonials">
         <div class="section-divider-top"></div>
@@ -459,72 +457,78 @@
             <div class="testimonials-header">
                 <h2 class="testimonials-title">What Our Partners Say</h2>
                 <div class="title-underline"></div>
-                <p class="testimonials-subtitle">Trusted by engineers, contractors, and landowners across the country</p>
+                <p class="testimonials-subtitle">Trusted by engineers, contractors, and landowners across the country
+                </p>
             </div>
-            
+
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
-                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
-                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2" />
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4" />
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4" />
                         </svg>
                     </div>
                     <h3 class="testimonial-name">Eng. Hana Tadesse</h3>
                     <p class="testimonial-role">Site Engineer — Addis Ababa</p>
-                    <p class="testimonial-text">"CPMS has transformed how we manage daily tasks and track site progress. The visual dashboard saves hours of paperwork each week."</p>
+                    <p class="testimonial-text">"CPMS has transformed how we manage daily tasks and track site progress.
+                        The visual dashboard saves hours of paperwork each week."</p>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
-                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
-                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2" />
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4" />
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4" />
                         </svg>
                     </div>
                     <h3 class="testimonial-name">Mr. Solomon Girma</h3>
                     <p class="testimonial-role">Contractor — Bahir Dar</p>
-                    <p class="testimonial-text">"The automation of reports and budget tracking has reduced errors drastically. It's reliable, simple, and very effective."</p>
+                    <p class="testimonial-text">"The automation of reports and budget tracking has reduced errors
+                        drastically. It's reliable, simple, and very effective."</p>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
-                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
-                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2" />
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4" />
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4" />
                         </svg>
                     </div>
                     <h3 class="testimonial-name">Mrs. Meseret Alemu</h3>
                     <p class="testimonial-role">Landowner — Adama</p>
-                    <p class="testimonial-text">"I love how transparent the system is. I can check progress and financial updates anytime from my phone."</p>
+                    <p class="testimonial-text">"I love how transparent the system is. I can check progress and
+                        financial updates anytime from my phone."</p>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2"/>
-                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4"/>
-                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4"/>
+                            <circle cx="50" cy="50" r="45" fill="#777C6D" opacity="0.2" />
+                            <circle cx="50" cy="35" r="15" fill="#777C6D" opacity="0.4" />
+                            <path d="M 25 75 Q 25 60 50 60 Q 75 60 75 75" fill="#777C6D" opacity="0.4" />
                         </svg>
                     </div>
                     <h3 class="testimonial-name">Eng. Dawit Kebede</h3>
                     <p class="testimonial-role">Project Manager — Jimma</p>
-                    <p class="testimonial-text">"CPMS bridges the communication gap between field and office teams. It keeps everyone accountable and aligned."</p>
+                    <p class="testimonial-text">"CPMS bridges the communication gap between field and office teams. It
+                        keeps everyone accountable and aligned."</p>
                 </div>
             </div>
-            
+
             <!-- Highlighted Testimonial -->
             <div class="testimonial-highlight">
-                <p class="highlight-quote">"Since adopting CPMS, our team's efficiency increased by 40%. We now deliver projects faster, with complete clarity over timelines and budgets."</p>
+                <p class="highlight-quote">"Since adopting CPMS, our team's efficiency increased by 40%. We now deliver
+                    projects faster, with complete clarity over timelines and budgets."</p>
                 <p class="highlight-author">— National Construction Group, 2025</p>
             </div>
         </div>
         <div class="section-divider-bottom"></div>
     </section>
-    
+
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="section-divider-top"></div>
@@ -534,7 +538,7 @@
                 <div class="title-underline"></div>
                 <p class="contact-subtitle">We'd love to hear from you. Reach out to our team anytime!</p>
             </div>
-            
+
             <div class="contact-content">
                 <!-- Contact Info Cards -->
                 <div class="contact-info-grid">
@@ -543,26 +547,26 @@
                         <h3 class="info-title">Office Address</h3>
                         <p class="info-text">CPMS Headquarters<br>BahirDar, Ethiopia</p>
                     </div>
-                    
+
                     <div class="contact-info-card">
                         <div class="info-icon">📞</div>
                         <h3 class="info-title">Phone</h3>
                         <p class="info-text">+251 911 234 567<br>+251 920 345 678</p>
                     </div>
-                    
+
                     <div class="contact-info-card">
                         <div class="info-icon">✉️</div>
                         <h3 class="info-title">Email</h3>
-                        <p class="info-text">info@cpms.com<br>support@cpms.com</p>
+                        <p class="info-text">info@bahiru.com<br>support@bahiru.com</p>
                     </div>
-                    
+
                     <div class="contact-info-card">
                         <div class="info-icon">⏰</div>
                         <h3 class="info-title">Working Hours</h3>
                         <p class="info-text">Mon – Fri: 8:30 AM – 6:00 PM<br>Sat: 9:00 AM – 1:00 PM</p>
                     </div>
                 </div>
-                
+
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper">
                     <h3 class="form-title">Send Us a Message</h3>
@@ -571,33 +575,86 @@
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="form-submit-btn">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>Bahiru Construction PLC</span>
+                    </div>
+                    <p class="footer-description">
+                        Building excellence across Ethiopia with precision and quality.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>CPMS System</h3>
+                        <ul>
+                            <li><a href="login.html">System Login</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> BahirDar, Ethiopia</li>
+                            <li><i class="fas fa-phone"></i> +251 911 234 567</li>
+                            <li><i class="fas fa-envelope"></i> info@bahiru.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bahiru Construction PLC. All rights reserved.</p>
+                <p class="footer-subtitle">Construction Project Management System (CPMS)</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="hero-animations.js"></script>
 </body>
+
 </html>
+</div>""
